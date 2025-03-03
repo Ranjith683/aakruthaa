@@ -159,6 +159,14 @@
 .content:hover {
     box-shadow: 2px 1px 2px white;
 }
+
+#slogan h5:hover {
+    background-color: white;
+    color: crimson;
+
+
+}
+
 /*
 /* Side Navigation Bar */
 .sidenav {
