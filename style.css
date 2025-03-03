@@ -503,7 +503,7 @@
 
 #recruitment li {
     text-align: justify;
-    padding-left: 30%;
+    padding-left: -30%;
 }
 
 #recruitment .box {
