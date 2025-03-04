@@ -138,26 +138,28 @@
     font-size: 13px;
 }
 
-.image-container {
-    padding: 5px;
+.hero-section {
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    /* Text color */
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
+.hero-section img {
+    object-fit: cover;
+    height: 100%;
+    padding: 10px;
 }
 
-.content:hover {
-    box-shadow: 2px 1px 2px white;
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    /* Adjust as needed */
+}
+
+.hero-content h5 {
+    font-size: 1.5rem;
+    /* Default font size */
+    margin: 10px 0;
 }
 
 #slogan h5:hover {
@@ -215,33 +217,37 @@
 
     #stickytop {
         background-color: rgb(15, 88, 112);
+
     }
 
-    .image-container .content h5 {
-        display: none;
-        /* Larger font size for medium devices */
+    .navbar-brand {
+        color: white;
     }
+
 }
 
 @media (min-width: 1024px) {
     .content h5 {
-        font-size: 2em;
+        font-size: 16px;
         /* Larger font size for large devices */
     }
 }
 
-@media (max-width: 767px) {
-    .content h5 {
-        font-size: 1.25em;
-        /* Smaller font size for small devices */
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: 50vh;
+        /* Adjust height for mobile */
     }
-}
 
-.content h5 {
-    margin: 10px 0;
-    /* Space between lines */
-    font-size: 1.5em;
-    /* Adjust size as needed */
+    .hero-content {
+        width: 90%;
+        /* Reduce width for better readability */
+    }
+
+    .hero-content h5 {
+        font-size: 1rem;
+        /* Smaller font size for mobile */
+    }
 }
 
 .section-gap h3 {
