@@ -213,6 +213,10 @@
         display: none;
     }
 
+    #stickytop {
+        background-color: rgb(15, 88, 112);
+    }
+
     .image-container .content h5 {
         display: none;
         /* Larger font size for medium devices */
@@ -424,6 +428,11 @@
     .header-top-bar-content ul li {
         font-size: 0.9rem;
     }
+
+    #career img {
+        max-width: 100%;
+
+    }
 }
 
 @media (max-width: 1024px) {
@@ -455,23 +464,22 @@
     }
 }
 
-#carrier {
+#career {
     padding: 0px;
 }
 
-#carrier img {
+#career img {
     width: 100%;
-    height: 70vh;
-    padding-bottom: 20px;
-    padding: 5px;
+    height: auto;
+    padding: 10px;
 }
 
-#carrier h3 {
+#career h3 {
     color: rgb(15, 88, 112);
     text-align: center;
 }
 
-#carrier p {
+#career p {
     padding: 10px;
     text-align: justify;
 }
